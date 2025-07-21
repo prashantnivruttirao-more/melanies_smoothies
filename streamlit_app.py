@@ -51,7 +51,7 @@ if ingredients_list:
 
 
       
-        st.subheader(fruit_chosen + 'Nutrition Information')
+        st.subheader(fruit_chosen + ' Nutrition Information')
         smoothiefroot_response = requests.get("https://FRUITYVICE.com/api/fruit/watermelon" + fruit_chosen)
         st_df = st.dataframe(data=smoothiefroot_response.json(), use_container_width=True)
 
